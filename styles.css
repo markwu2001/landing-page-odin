@@ -1,0 +1,207 @@
+:root {
+    --primary-dark-blue:#1F2937;
+    --secondary-light-gray:#E5E7EB;
+    --main-hero-white: #F9FAF8;
+    --button-cta-blue: #3882F6;
+
+}
+
+h1, h2, h3, p , a {
+    padding: 0px;
+    margin: 0px;
+    font-family: roboto, sans-serif;
+    text-decoration: none;
+    color: var(--main-hero-white);
+}
+a:visited { text-decoration: none; color: inherit;}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px; /*a weird bug on my browser causes all ul to have some left padding for no reason*/
+}
+
+button {
+    background-color: var(--button-cta-blue);
+    border-color: var(--main-hero-white);
+    border-radius: 8px;
+    color: var(--main-hero-white);
+    border-style: solid;
+    padding: 5px 25px;
+    text-wrap: nowrap;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-hero-white);
+
+}
+
+.header, .Content1 {
+    padding: 0px 200px;
+}
+
+.header-logo {
+    font-size: 24px;
+}
+
+.header-links {
+    display: flex;
+    gap:10px;
+    font-size: 18px;
+}
+
+.Content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    
+}
+
+.Content1-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        color: var(--secondary-light-gray);
+        font-size: 18px;
+    }
+
+    button {
+        width: 100px;
+        border: none;
+        margin-top: 10px;
+    }
+}
+
+.Content1 img {
+    flex: 1 1 auto;
+    object-fit: cover;
+}
+
+.Content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 300px;
+    
+    h2 {
+        color: var(--primary-dark-blue);
+        margin-bottom: 30px;
+        font-size: 36px;
+        font-weight: bolder;
+    }
+}
+
+.Content2 ul{
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+
+.Content2 ul li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    img {
+        border-radius: 10px;
+        border-width: 4px;
+        border-style: solid; 
+        border-color: var(--button-cta-blue);
+        object-fit: cover;
+    }
+
+    p {
+        font-weight: lighter;
+        color: var(--primary-dark-blue);
+        max-width: 150px;
+    }
+}
+
+.Content2 ul li p{
+    text-align: center;
+}
+
+
+
+.Content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 300px;
+    background-color: var(--secondary-light-gray);
+    
+
+    h2 {
+        margin: 0px;
+        font-weight: lighter;
+        color: var(--primary-dark-blue);
+        font-size: 36px;
+    }
+    p {
+        align-self: flex-end;
+        color: var(--primary-dark-blue);
+    }
+}
+
+.Content4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px 200px;
+    background-color: var(--button-cta-blue);
+    padding: 20px 90px;
+    border-radius: 6px;
+    gap: 20px;
+
+    .Content4-text {
+        display: flex;
+        color: var(--main-hero-white);
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* button {
+        background-color: var(--button-cta-blue);
+        border-color: var(--main-hero-white);
+        border-radius: 8px;
+        color: var(--main-hero-white);
+        border-style: solid;
+        padding: 5px 25px;
+        text-wrap: nowrap;
+    } */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0px;
+    justify-self: flex-end;
+    color: var(--main-hero-white);
+}
+
+.header, .Content1, .footer {
+    background-color: var(--primary-dark-blue);
+}
